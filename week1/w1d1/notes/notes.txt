@@ -1,0 +1,23 @@
+
+Number Type
+PEMDOS is numbers order of operation
+Parenthese, Exponents, Multi, Dividsion, Addition, Subtraction
+- Modulo use console.log
+
+Boolean Type
+! (upside down) Not
+&& And
+|| Or
+
+Javascript has 7 falsy values
+0
+-0, 0n
+null
+undefined
+false
+NaN
+""(empty string)
+
+if (0) {
+  console.log("banana")
+}

@@ -1,0 +1,149 @@
+String Data Type:
+
+  syntax
+" or '
+used to quote characters
+
+  indices
+Use [] to index a string to get back a certain
+character.
+
+  .indexOf
+finding where the character is in the quotations
+
+  .length
+run it after the " marks to count the string
+
+  []
+with a number in it to identify the character
+you can always use math equations to identify it
+
+  indexOf
+use () to find the location of a character
+smaller index reports first in multiple character
+occurances.
+
+THERE ARE NO NEGATIVE VALUES IN JAVASCRIPT!
+
+EX: console.log('He said, What\'s up?"')
+use a \ to ommit
+
+Funtions:
+
+  function definition
+function thisIsMyName(parameter1, parameter2) {
+
+}
+
+  function invocation or calling
+function thisIsMyName(argumnet1, argument2)
+
+function testME () {
+  console.log("test me please!");
+}
+
+  return value
+funciton addTwo (num1, num2) {
+  return num1 + num2;
+}
+console.log(addTwo(1,2));
+
+*return is what the function =
+*console.log is just to display a value or whatever
+
+Conditionals:
+
+let c = 'turtle';
+
+if (c === 'dog') {
+    console.log("I'm a dog!");
+} else if (c === "turtle") {
+    console.log("I'm a turtle!");
+} else if (c === "potato") {
+    console.log("I'm a potato");
+} else {
+    console.log("I don't know what I am");
+}
+
+Loops:
+
+let index = 0;
+
+while (index , 5) {
+  console.log("hello world");
+  //looEnd expression
+  index ++;
+}
+
+while and for Loops:
+
+let i = 0;
+
+while(i < 5) {
+    console.log('hello world');
+    i++
+}
+
+for (let i = 0; i < 5; i++) {
+  console.log('hello world');
+}
+
+function firstFor() {
+ for (let num = 7; num >= 2; num--) {
+	console.log(num);
+ }
+}
+
+firstFor();
+
+
+Array:
+lists of data in 1 place
+values are in order and separated by commas
+they are dynamic, no set length.
+they are global.
+they are in [].
+they are 0 indexed, starts at [0]
+they can be empty []
+can use .length, counting by commas seperated values
+can contain many types of data
+concat method returns a combo of 2 arrays without
+modifying either one.
+Ex:
+let first = [1,2,3];
+let second = [5,5,5];
+let third = first.concat(second);
+
+console.log(third);
+console.log(first);
+
+Ex:
+let array = ["dog", "cat", "turtle"]
+
+console.log(array[1]) // "cat"
+console.log(array[array.length - 1]) // finds last element // "turtle"
+
+Concat:
+Ex:
+let array1 = [1, 2, 3]
+let array2 = [4, 5, 6]
+let array3 = [7]
+
+let array4 = array1.concat(array2, array3)
+
+console.log(array4) // [1, 2, 3, 4, 5, 6, 7]
+
+Always start with syntax shells then fill in
+Function shell
+function () {
+
+}
+
+Conditional Shells
+if () {
+
+} else {
+
+}
+hi there what is going on
+what in the world is this crazy what is this 

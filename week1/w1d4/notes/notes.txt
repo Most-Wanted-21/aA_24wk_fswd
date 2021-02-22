@@ -1,0 +1,18 @@
+function
+for loop
+while loopif statement
+
+All of these require
+parenthesis first then curly brackets.
+
+function name(){}
+for(){}
+while(){}
+while(){}
+if(){}
+
+if(this is my question){
+  outcome or perform
+} else {
+  do this instead
+}
