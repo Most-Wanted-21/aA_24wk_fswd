@@ -434,7 +434,7 @@
 // delete ourDog.tails;
 // console.log(ourDog.tails)
 
-// LOOKUP IN OBJECTS (easier than switch statement)
+//  LOOKUP IN OBJECTS (easier than switch statement)
 // function phonetickLookup(val) {
 //   var result = "";
 //   var lookup = {
@@ -450,7 +450,7 @@
 // }
 // console.log(phonetickLookup("charlie"));
 
-// TEST OBJECT PROPERTIES
+//  TEST OBJECT PROPERTIES
 // var myObj = {
 //   gift: "pony",
 //   pet: "kitten",
@@ -465,7 +465,67 @@
 // }
 // console.log(checkObj("hello"));
 
-// MANIPULATING COMPLEX OBJECTS
+//  MANIPULATING COMPLEX OBJECTS
+// var myMusic = [{
+//     "artist": "Billy Joel",
+//     "title": "Piano Man",
+//     "release_year": 1973,
+//     "formats": [
+//       "CD",
+//       "8T",
+//       "LP"
+//     ],
+//     "gold": true
+//   },
+
+//   {
+//     "artist": "Beau Carnes",
+//     "title": "Cereal Man",
+//     "release_year": 2003,
+//     "fomats": [
+//       "YouTube video"
+//     ]
+//   }
+// ]
+
+//  ACCESSING NESTED OBJECTS
+// var myStorage = {
+//   "car": {
+//     "inside": {
+//       "glove box": "maps",
+//       "passenger seat": "crumbs"
+//     },
+//     "outside": {
+//       "trunk": "jack"
+//     }
+//   }
+// };
+// var gloveBoxContents = myStorage.car.inside["glove box"];
+// console.log(gloveBoxContents)
+
+// ACCESSING NESTED ARRAYS
+// var myPlants = [
+//   {
+//     type: "flowers",
+//     list: [
+//       "rose",
+//       "tulip",
+//       "dandelion"
+//     ]
+//   },
+//   {
+//     type: "trees",
+//     list: [
+//       "fir",
+//       "pine",
+//       "birch"
+//     ]
+//   }
+// ];
+// var secondTree = myPlants[1].list[1];
+// console.log(secondTree)
+
+// RECORD COLLECTION
 
 
 
