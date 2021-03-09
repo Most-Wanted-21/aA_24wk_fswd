@@ -526,45 +526,116 @@
 // console.log(secondTree)
 
 // RECORD COLLECTION
-var collection = {
-  "2548": {
-    "album": "Slippery When Wet",
-    "artist": "Bon Jovi",
-    "tracks": [
-      "Let It Rock",
-      "You Give Love a Bad Name"
-    ]
-  },
-  "2408": {
-    "album": "1999",
-    "Artist": "Prince",
-    "tracks": [
-      "1999",
-      "Little Red Corvette"
-    ]
-  },
-  "1245": {
-    "artist": "Robert Palmer",
-    "tracks": []
-  },
-  "5439": {
-    "album": "Abba Gold"
-  }
-};
-var collectionCopy = JSON.parse(JSON.stringify(collection));
-function updateRecords(id, prop, value) {
-  if (value === "") {
-    delete collection[id][prop];
-  } else if (prop === "tracks") {
-    collection[id][prop] = collection[id][prop] || [];
-    collection[id][prop].push(value);
-  } else {
-    collection[id][prop] = value;
-  }
-  return collection;
+// var collection = {
+//   "2548": {
+//     "album": "Slippery When Wet",
+//     "artist": "Bon Jovi",
+//     "tracks": [
+//       "Let It Rock",
+//       "You Give Love a Bad Name"
+//     ]
+//   },
+//   "2408": {
+//     "album": "1999",
+//     "Artist": "Prince",
+//     "tracks": [
+//       "1999",
+//       "Little Red Corvette"
+//     ]
+//   },
+//   "1245": {
+//     "artist": "Robert Palmer",
+//     "tracks": []
+//   },
+//   "5439": {
+//     "album": "Abba Gold"
+//   }
+// };
+// var collectionCopy = JSON.parse(JSON.stringify(collection));
+// function updateRecords(id, prop, value) {
+//   if (value === "") {
+//     delete collection[id][prop];
+//   } else if (prop === "tracks") {
+//     collection[id][prop] = collection[id][prop] || [];
+//     collection[id][prop].push(value);
+//   } else {
+//     collection[id][prop] = value;
+//   }
+//   return collection;
+// }
+// updateRecords(2408, "tracks", "test");
+// console.log(updateRecords(5439, "artist", "ABBA"));
+
+// ITERATE WITH WHILE LOOPS
+// var myArray = [];
+// var i = 0;
+// while (i < 5) {
+//   myArray.push(i);
+//   i++;
+// }
+// console.log(myArray)
+
+// ITERATE WITH FOR LOOPS
+// var ourArray = [];
+// for (var i = 0; i < 5; i++) {
+//   ourArray.push(i);
+// }
+// var myArray = [];
+// for (var i = 1; i < 6; i++) {
+//   myArray.push(i);
+// }
+// console.log(myArray)
+
+// ITERATE ODD #S WITH A FOR LOOP
+// var ourArray = [];
+// for (var i = 0; i < 10; i += 2) {
+//   ourArray.push(i);
+// }
+// console.log(ourArray);
+// var myArray = [];
+// for (var i = 1; i < 10; i += 2) {
+//   myArray.push(i);
+// }
+// console.log(myArray)
+
+// COUNT BACKWORDS WITH A FOR LOOP
+// var ourArray = [];
+// for (var i = 10; i > 0; i -= 2) {
+//   ourArray.push(i);
+// }
+// console.log(ourArray)
+// var myArray = [];
+// for (var i = 9; i > 0; i -= 2) {
+//   myArray.push(i);
+// }
+// console.log(myArray)
+
+// ITERATE THROUGH AN ARRAY WITH A FOR LOOP
+var ourArr = [9, 10, 11, 12];
+var ourTotal = 1;
+for (var i = 0; i < ourArr.length; i++) {
+  ourTotal += ourArr[i];
 }
-updateRecords(2408, "tracks", "test");
-console.log(updateRecords(5439, "artist", "ABBA"));
+console.log(ourTotal)
+var myArr = [2, 3, 4, 5, 6];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
