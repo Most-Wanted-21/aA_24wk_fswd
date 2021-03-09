@@ -125,12 +125,19 @@
 // }
 // console.log(timesFive(5));
 
+//  EX: various methods to calling a function with return
+// function timesFive (num) {
+//   return num * 5;
+// }
+// var answer = timesFive(5)
+// timesFive(5);
+// console.log(timesFive(5))
+
 //  UNDEFINED VALUE RETURN FROM A FUNCTION
 // var sum = 0;
 // function addThree() {
 //   sum = sum + 3;
 // }
-
 // function addFive() {
 //   sum += 5;
 // }
@@ -141,7 +148,6 @@
 //    return (num + 5) / 3
 // }
 // changed = change(10);
-
 // var processed = 0;
 // function processArg(num) {
 //   return (num + 3) / 5
@@ -330,7 +336,7 @@
 // }
 // console.log(isLess(10, 15))
 
-// RETURN EARLY PATTERN FROM FUNCTION
+//  RETURN EARLY PATTERN FROM FUNCTION
 // function abTest(a, b) {
 //   if (a < 0 || b < 0) {
 //     return undefined;
@@ -403,7 +409,7 @@
 // var player = testObj[playerNumber];
 // console.log(playerNumber)
 
-// UPDATING OBJECT PROPERTIES
+//  UPDATING OBJECT PROPERTIES
 // var ourDog = {
 //   "name": "Camper",
 //   "legs": 4,
@@ -424,7 +430,7 @@
 // ourDog.skin = 'black and brown';
 // console.log(ourDog.skin)
 
-// DELETE PROPERTIES IN OBJECTS
+//  DELETE PROPERTIES IN OBJECTS
 // var ourDog = {
 //   "name": "Camper",
 //   "legs": 4,
@@ -503,7 +509,7 @@
 // var gloveBoxContents = myStorage.car.inside["glove box"];
 // console.log(gloveBoxContents)
 
-// ACCESSING NESTED ARRAYS
+//  ACCESSING NESTED ARRAYS
 // var myPlants = [
 //   {
 //     type: "flowers",
@@ -525,7 +531,7 @@
 // var secondTree = myPlants[1].list[1];
 // console.log(secondTree)
 
-// RECORD COLLECTION
+//  RECORD COLLECTION
 // var collection = {
 //   "2548": {
 //     "album": "Slippery When Wet",
@@ -566,7 +572,7 @@
 // updateRecords(2408, "tracks", "test");
 // console.log(updateRecords(5439, "artist", "ABBA"));
 
-// ITERATE WITH WHILE LOOPS
+//  ITERATE WITH WHILE LOOPS
 // var myArray = [];
 // var i = 0;
 // while (i < 5) {
@@ -575,7 +581,7 @@
 // }
 // console.log(myArray)
 
-// ITERATE WITH FOR LOOPS
+//  ITERATE WITH FOR LOOPS
 // var ourArray = [];
 // for (var i = 0; i < 5; i++) {
 //   ourArray.push(i);
@@ -586,7 +592,27 @@
 // }
 // console.log(myArray)
 
-// ITERATE ODD #S WITH A FOR LOOP
+//  DIFFERENCE FROM WHILE TO FOR LOOPS
+// let i = 2;
+// while ( i <= 6 ){
+// console.log(i)
+// i++
+// }
+// for (let i = 2; i <= 6; i++){
+// 	console.log(i);
+// }
+
+//  CONCAT ARRAYS
+// let array1 = [1, 2, 3]
+// let array2 = [4, 5, 6]
+// let array3 = [7]
+// console.log(array1.concat(array2, array3))
+
+
+
+
+
+//  ITERATE ODD #S WITH A FOR LOOP
 // var ourArray = [];
 // for (var i = 0; i < 10; i += 2) {
 //   ourArray.push(i);
@@ -598,7 +624,7 @@
 // }
 // console.log(myArray)
 
-// COUNT BACKWORDS WITH A FOR LOOP
+//  COUNT BACKWORDS WITH A FOR LOOP
 // var ourArray = [];
 // for (var i = 10; i > 0; i -= 2) {
 //   ourArray.push(i);
@@ -610,7 +636,7 @@
 // }
 // console.log(myArray)
 
-// ITERATE THROUGH AN ARRAY WITH A FOR LOOP
+//  ITERATE THROUGH AN ARRAY WITH A FOR LOOP
 var ourArr = [9, 10, 11, 12];
 var ourTotal = 1;
 for (var i = 0; i < ourArr.length; i++) {
