@@ -608,9 +608,283 @@
 // let array3 = [7]
 // console.log(array1.concat(array2, array3))
 
+//  LOWERCASE .toLowerCase()
+// function whisper(str) {
+// 	let whispered = ("..." + str.toLowerCase() + '...')
+//     return whispered;
+// }
+// console.log(whisper("Hey Buddy")); // => "...hey buddy..."
+// console.log(whisper("YEA! that was fun")); // => "...yea! that was fun..."
+
+//  UPPERCASE .toUpperCase()
+// function yell(str) {
+//   return str.toUpperCase()
+// }
+// console.log(yell("I want to go to the store")); // => "I WANT TO GO TO THE STORE!!!"
+// console.log(yell("Time to program")); // => "TIME TO PROGRAM!!!"
+
+//  ECHO
+// function echo(string) {
+//   console.log(string.toUpperCase(), '...', string, '...', string.toLowerCase())
+//   return string
+// }
+// echo("Mom!"); // => prints "MOM! ... Mom! ... mom!"
+// echo("hey"); // => prints "HEY ... hey ... hey"
+// echo("JUMp"); // => prints "JUMP ... JUMp ... jump"
+
+//  LOG BETWEEN
+// function logBetween(lowNum, highNum) {
+//   for (let i = lowNum; i <= highNum; i += 1) {
+//     console.log(i);
+//   }
+// }
+//
+// function logBetweenWhile(lowNum, highNum) {
+//   let i = lowNum;
+//   while (i <= highNum) {
+//     console.log(i);
+//     i++;
+//   }
+// }
+// logBetween(0, 12)
+// logBetweenWhile(5,20)
+
+//  PRINT FIVES 4 methods
+// function printFives1For(max) {
+//   for (let i = 0; i < max; i += 1) {
+//     if (i % 5 === 0) {
+//       console.log(i);
+//     }
+//   }
+// }
+// function printFives1(max) {
+//   let i = 0;
+//   while (i < max) {
+//     if (i % 5 === 0) {
+//       console.log(i);
+//     }
+//     i++;
+//   }
+// }
+// function printFives2(max) {
+//   for (let i = 0; i < max; i += 5) {
+//     console.log(i);
+//   }
+// }
+// function printFives2While(max) {
+//   let i = 0;
+//   while (i < max) {
+//     console.log(i);
+//     i += 5;
+//   }
+// }
+
+//  LOG BETWEEN STEPPER
+// function logBetweenStepperFor(min, max, step) {
+//   for (let i = min; i <= max; i += step) {
+//     console.log(i);
+//   }
+// }
+// function logBetweenStepper(min, max, step) {
+//   let i = min;
+//   while (i <= max) {
+//     console.log(i);
+//     i += step;
+//   }
+// }
+
+//  THREE OR SEVEN
+// function threeOrSeven(number) {
+//   return (number % 7 === 0) || (number % 3 === 0);
+// }
+// function threeOrSevenConditional(number) {
+//   if ((number % 7 === 0) || (number % 3 === 0)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(threeOrSeven(3));   // => true
+// console.log(threeOrSeven(42));  // => true
+// console.log(threeOrSeven(8));   // => false
+
+// SUM ARRAY
+// function sumArray(array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i += 1) {
+//     let num = array[i];
+//     sum += num;
+//   }
+//   return sum;
+// }
+// function sumArrayWhile(array) {
+//   let sum = 0;
+//   let i = 0;
+//   while (i < array.length) {
+//     let num = array[i];
+//     sum += num;
+//     i += 1;
+//   }
+//   return sum;
+// }
+// console.log(sumArray([5, 6, 4])); // => 15
+// console.log(sumArray([7, 3, 9, 11])); // => 30
+
+//  ADD ARRAYS
+// function combineArray(array1, array2) {
+//   let newArray = array1.concat(array2);
+//   return newArray;
+// }
+// console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
+// console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
+
+// DOUBLER
+// function doubler(numbers) {
+//   let doubledNums = [];
+//   for (i = 0; i < numbers.length; i++) {
+//     let oldNum = numbers[i];
+//     let newNum = oldNum * 2;
+//     // this step is important because concat does NOT change the original array
+//     doubledNums = doubledNums.concat(newNum);
+//   }
+//   return doubledNums;
+// }
+// console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+// console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+
+// VOWEL COUNTER
+// function countVowels(word) {
+// // 1.
+
+// }
 
 
+//  PAIRS MAKER
+// your code here
+// Understand
+	// Make unique pairs of each elements in the array.
+	// Accepts an array as the parameter
+	// Return 2-dimensional array of unique pairs
+// Plan
+	// define a function (function declaration syntax)
+	// create a new array to store our result
+	// Make pairs
+		// iterate over the input array
+			// store the current element in a variable
+			// iterate over the rest of the input array
+				// store the 2nd current element
+                // push the 1st stored element and 2nd stored element into a new array
+				// push that new array into the resultArr
+    // return my resultArr
+// Do
+// Improve
+// define a function (function declaration syntax)
+// let pairsMaker = function (arr) {
+//   // create a new array to store our result
+//   let resultArr = [];
+//   // iterate over the input array
+//   for (let i = 0; i < arr.length; i++) {
+//     // store the 2nd current element
+//     let el1 = arr[i];
+//     // iterate over the rest of the input array
+//     for (let j = i + 1; j < arr.length; j++) {
+//       // store the 2nd current element
+//       let el2 = arr[j];
+//       // push the 1st stored element and 2nd stored element into a new array
+//       // let pair = [];
+//       // pair.push(el1);
+//       // pair.push(el2);
+//       // push that new array into the resultArr
+//       // resultArr.push(pair);
+//       resultArr.push( [el1, el2] )
+//     }
+//   }
+//   return resultArr;
+// };
+// console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
+// // [ [ 'a', 'b' ],
+// //   [ 'a', 'c' ],
+// //   [ 'a', 'd' ],
+// //   [ 'b', 'c' ],
+// //   [ 'b', 'd' ],
+// //   [ 'c', 'd' ] ]
+// console.log(pairsMaker(['Rosemary', 'Alex', 'Connor'])); // =>
+// // [ [ 'Rosemary', 'Alex' ],
+// //   [ 'Rosemary', 'Connor' ],
+// //   [ 'Alex', 'Connor' ] ]
 
+//  TWO DIMENSIONAL SUM
+// let twoDimensionalSum = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     let subArr = arr[i];
+//       for (let j = 0; j < subArr.length; j++) {
+//         let num = subArr[j];
+//         sum += num;
+//       }
+//   }
+//   return sum;
+// };
+// let arr1 = [
+//   [1, 3],
+//   [-4, 7, 10],
+//   [2]
+// ];
+// console.log(twoDimensionalSum(arr1)); // 19
+// let arr2 = [
+//   [],
+//   [3, 1, 2],
+// ];
+// console.log(twoDimensionalSum(arr2)); // 6
+
+//  FUNCTION DECLARATION VS FUNCTION EXPRESSION
+// Function declaration
+// function sayHello(){
+//   console.log("hello");
+//   console.log("bye");
+// }
+// sayHello()
+// // Function expression
+// let sayHello2 = function() {
+//   console.log("Hello");
+//   console.log("bye");
+// }
+// sayHello2()
+
+//  FUNCTION EXPRESSION FIRST CLASS OBJECTS
+// let name = 'Alvin'
+// let age = 1000;
+// let getAvg = function(num1, num2) {
+//     return (num1 + num2)/2
+// };
+// console.log(name, age, getAvg(4, 2)) // "Alvin", 1000, 3
+// const arr = [getAvg, name, age];
+// console.log(arr[0](6,4)); // 5
+
+//  MUTABILITY
+// Immutable Types
+// Cannot be mutated (changed)
+// Examples
+// Number, e.g. 122
+// NaN
+// undefined
+// null
+// String, e.g. abc
+// re-assignable != mutable
+// Mutable Types
+// Can be mutated (changed)
+// Examples
+// Arrays, e.g. ['a', 'b', 'c']
+// Objects (we will see this later)
+// let str = "abc"
+// str[1] = 'x';
+// console.log(str) // 'abc';
+// let str = 'abc';
+// str += 'd'; // str = str + 'd';
+// console.log(str) // 'abcd'
+// let arr = ["a", "b", "c"];
+// arr[1] = "x";
+// console.log(arr) // ["a", "x", "c"];
 
 //  ITERATE ODD #S WITH A FOR LOOP
 // var ourArray = [];
@@ -637,18 +911,50 @@
 // console.log(myArray)
 
 //  ITERATE THROUGH AN ARRAY WITH A FOR LOOP
-var ourArr = [9, 10, 11, 12];
-var ourTotal = 1;
-for (var i = 0; i < ourArr.length; i++) {
-  ourTotal += ourArr[i];
-}
-console.log(ourTotal)
-var myArr = [2, 3, 4, 5, 6];
+// var ourArr = [9, 10, 11, 12];
+// var ourTotal = 1;
+// for (var i = 0; i < ourArr.length; i++) {
+//   ourTotal += ourArr[i];
+// }
+// console.log(ourTotal)
+// var myArr = [2, 3, 4, 5, 6];
 
+//  NESTED LOOPS PAIRS IN ARRAYS
+// sayHello = "Hello"
+// debugger
+// for (let i = 0; i < 3; i++) {
+//     debugger
+//   for (let j = 0; j < 3; j++) {
+//       debugger
+//     console.log(sayHello);
+//   }
+// }
+// let dogs = [
+//   ['belka', 'strelka', "peter"], // 1
+//   ['laika', 'dezik', "kevin"] //2
+//  ]
 
+// for(let i = 0; i < dogs.length; i++) {
+// debugger
+// let row = dogs[i]
+// for(let j = i + 0; j < row.length; j++) {
+// debugger
+// let dog = row[j]
+// console.log(dog)
+// }
+// }
 
-
-
+//  NESTED ARRAYS UNIQUE PAIRS IN ARRAYS
+// let dogs = ['belka', 'strelka', 'laika', 'dezik']
+// for(let i = 0; i < dogs.length; i++) {
+//   let dog1 = dogs[i];
+//   debugger
+//   for(let j = i + 1; j < dogs.length; j++) {
+//     let dog2 = dogs[j]
+//     debugger
+//     console.log(dog1, dog2)
+//   }
+// }
 
 
 
@@ -675,50 +981,35 @@ var myArr = [2, 3, 4, 5, 6];
 
 //  FOREACH
 // let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"]
-
 // let str = ""
 // let banana = function (el) {
 // str += el
 // }
-
 // parks.forEach(banana)
-
 
 //  MAPS
 // let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"]
-
 // let newParks = parks.map(function(park) {
 //   return park + "national park"
 // })
-
 // console.log(newParks)
-
 
 //  MAPS
 // let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"];
-
 // let yParks = [];
-
 // for(let i = 0; i < parks.length; i++){
 //   let park = parks[i];
-
 //   if (park[0] === "Y") {
 //     yParks.push(park)
 //   }
 // }
-
 // console.log(yParks)
-
-
 // selectedParks = parks.filter(function(park) {
 //   return park[0] === "Y" //if the condition returns true then that means that we are going to choose the element
 // })
-
 // selectedParks = parks.filter(function(park) {
 //   return park.includes("o");
 // })
-
-
 // selectedParks = parks.filter(function(park) {
 //   return park.length > 7;
 // })
