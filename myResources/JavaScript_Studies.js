@@ -752,30 +752,62 @@
 // console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
 // console.log(doubler([7, 1, 8])); // => [14, 2, 16]
 
-// VOWEL COUNTER
+// 	VOWEL COUNTER
 // function countVowels(word) {
-// // 1.
+// 0. set a counter vowel counter variable
+// 1. iterate through incoming word
+// 2. checking whether the current letter is a vowel
+// 3. increment the vowelCounter vowel if the current letter is a vowel
+// 	let vowelCounter = 0;
+// 	let index = 0;
+// 	while (index < word.length) {
+// 		let letter = word[index];
 
+// 		if (letter === 'a' ||
+// 				letter === 'e' ||
+// 				letter === 'i' ||
+// 				letter === 'o' ||
+// 				letter === 'u') {
+// 			vowelCounter += 1;
+// 		}
+// 		index++;
+// 	}
+// 	return vowelCounter;
 // }
+// console.log(countVowels('bootcamp'));
+// OR
+// function countVowels(word) {
+//   let vowels = 'aeiou';
+//   let counter = 0;
+//   for (let i = 0; i < word.length; i++) {
+//   	let char = word[i]
+//     if (vowels.includes(char)) {
+//     	counter++;
+//     }
+//   }
+//   return counter;
+// };
+// console.log(countVowels("bootcamp")); // => 3
+
 
 
 //  PAIRS MAKER
 // your code here
 // Understand
-	// Make unique pairs of each elements in the array.
-	// Accepts an array as the parameter
-	// Return 2-dimensional array of unique pairs
+// Make unique pairs of each elements in the array.
+// Accepts an array as the parameter
+// Return 2-dimensional array of unique pairs
 // Plan
-	// define a function (function declaration syntax)
-	// create a new array to store our result
-	// Make pairs
-		// iterate over the input array
-			// store the current element in a variable
-			// iterate over the rest of the input array
-				// store the 2nd current element
-                // push the 1st stored element and 2nd stored element into a new array
-				// push that new array into the resultArr
-    // return my resultArr
+// define a function (function declaration syntax)
+// create a new array to store our result
+// Make pairs
+// iterate over the input array
+// store the current element in a variable
+// iterate over the rest of the input array
+// store the 2nd current element
+// push the 1st stored element and 2nd stored element into a new array
+// push that new array into the resultArr
+// return my resultArr
 // Do
 // Improve
 // define a function (function declaration syntax)
@@ -956,60 +988,64 @@
 //   }
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  FOREACH
-// let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"]
-// let str = ""
-// let banana = function (el) {
-// str += el
+// 	ARRAY SUM
+// function isLessThanFive (word) {
+// 	let lengthOfWord = word.length
+//     return lengthOfWord < 5
 // }
-// parks.forEach(banana)
-
-//  MAPS
-// let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"]
-// let newParks = parks.map(function(park) {
-//   return park + "national park"
-// })
-// console.log(newParks)
-
-//  MAPS
-// let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"];
-// let yParks = [];
-// for(let i = 0; i < parks.length; i++){
-//   let park = parks[i];
-//   if (park[0] === "Y") {
-//     yParks.push(park)
+// function removeSmallWords(str) {
+// 	debugger
+// 	let results = [];
+// 	let split = str.split(' ');
+// 	debugger
+//   for(let i = 0; i < split.length; i++) {
+//   	let word = split[i];
+//     if (!isLessThanFive(word)) {
+//     	results.push(word);
+//     }
 //   }
+//   return results.join(' ');
 // }
-// console.log(yParks)
-// selectedParks = parks.filter(function(park) {
-//   return park[0] === "Y" //if the condition returns true then that means that we are going to choose the element
-// })
-// selectedParks = parks.filter(function(park) {
-//   return park.includes("o");
-// })
-// selectedParks = parks.filter(function(park) {
-//   return park.length > 7;
-// })
+// console.log(removeSmallWords('the cat is awesome'));
+
+// 	AVG VAL
+// let avgVal = function(arr) {
+// 	if (arr.length === 0) {
+// 			return null;
+// 	}
+// 	let sum = 0;
+// 	for (let i = 0; i < arr.length; i++) {
+// 			let el = arr[i];
+// 			sum += el;
+// 	}
+// 	return sum / arr.length;
+// };
+// console.log(avgVal([5, 10])); // 7.5
+// console.log(avgVal([3, 7, 2, 1, 2])); // 3
+// console.log(avgVal([])); // null
+
+// 	HELPER FUNCTION
+// let isPrime = function (num) {
+// 	if (num < 2) {
+// 		return false;
+// 	}
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// };
+// let pickPrimes = function (nums) {
+// 	let primes = [];
+
+// 	for (let i = 0; i < nums.length; i++) {
+// 		let num = nums[i];
+// 		if (isPrime(num)) {
+// 			primes.push(num);
+// 		}
+// 	}
+// 	return primes;
+// }
+// console.log(pickPrimes([4, 7, 5, 12]));
+// console.log(pickPrimes([31, 25, 9, 16]));
