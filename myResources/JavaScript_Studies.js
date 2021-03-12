@@ -592,6 +592,12 @@
 // }
 // console.log(myArray)
 
+
+
+
+
+// ************************ aA Studies **************************
+
 //  DIFFERENCE FROM WHILE TO FOR LOOPS
 // let i = 2;
 // while ( i <= 6 ){
@@ -789,8 +795,6 @@
 // };
 // console.log(countVowels("bootcamp")); // => 3
 
-
-
 //  PAIRS MAKER
 // your code here
 // Understand
@@ -812,26 +816,26 @@
 // Improve
 // define a function (function declaration syntax)
 // let pairsMaker = function (arr) {
-//   // create a new array to store our result
-//   let resultArr = [];
-//   // iterate over the input array
-//   for (let i = 0; i < arr.length; i++) {
-//     // store the 2nd current element
-//     let el1 = arr[i];
-//     // iterate over the rest of the input array
-//     for (let j = i + 1; j < arr.length; j++) {
-//       // store the 2nd current element
-//       let el2 = arr[j];
-//       // push the 1st stored element and 2nd stored element into a new array
-//       // let pair = [];
-//       // pair.push(el1);
-//       // pair.push(el2);
-//       // push that new array into the resultArr
-//       // resultArr.push(pair);
-//       resultArr.push( [el1, el2] )
-//     }
-//   }
-//   return resultArr;
+// 	// create a new array to store our result
+// 	let resultArr = [];
+// 	// iterate over the input array
+// 	for (let i = 0; i < arr.length; i++) {
+// 		// store the 2nd current element
+// 		let el1 = arr[i];
+// 		// iterate over the rest of the input array
+// 		for (let j = i + 1; j < arr.length; j++) {
+// 			// store the 2nd current element
+// 			let el2 = arr[j];
+// 			// push the 1st stored element and 2nd stored element into a new array
+// 			// let pair = [];
+// 			// pair.push(el1);
+// 			// pair.push(el2);
+// 			// push that new array into the resultArr
+// 			// resultArr.push(pair);
+// 			resultArr.push([el1, el2])
+// 		}
+// 	}
+// 	return resultArr;
 // };
 // console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
 // // [ [ 'a', 'b' ],
@@ -965,7 +969,6 @@
 //   ['belka', 'strelka', "peter"], // 1
 //   ['laika', 'dezik', "kevin"] //2
 //  ]
-
 // for(let i = 0; i < dogs.length; i++) {
 // debugger
 // let row = dogs[i]
@@ -987,6 +990,32 @@
 //     console.log(dog1, dog2)
 //   }
 // }
+// *******************THURSDAY / WK1D4*********************
+// 	HELPER FUNCTION
+// let isPrime = function (num) {
+// 	if (num < 2) {
+// 		return false;
+// 	}
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// };
+// let pickPrimes = function (nums) {
+// 	let primes = [];
+
+// 	for (let i = 0; i < nums.length; i++) {
+// 		let num = nums[i];
+// 		if (isPrime(num)) {
+// 			primes.push(num);
+// 		}
+// 	}
+// 	return primes;
+// }
+// console.log(pickPrimes([4, 7, 5, 12]));
+// console.log(pickPrimes([31, 25, 9, 16]));
 
 // 	ARRAY SUM
 // function isLessThanFive (word) {
@@ -1024,28 +1053,239 @@
 // console.log(avgVal([3, 7, 2, 1, 2])); // 3
 // console.log(avgVal([])); // null
 
-// 	HELPER FUNCTION
-// let isPrime = function (num) {
-// 	if (num < 2) {
-// 		return false;
+// 	MY INDEX OF RECALL
+// let myIndexOf = function(arr, target) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 			let el = arr[i];
+// 			if (target === el) {
+// 					return i;
+// 			}
 // 	}
-// 	for (let i = 2; i < num; i++) {
-// 		if (num % i === 0) {
-// 			return false;
-// 		}
-// 	}
-// 	return true;
+// 	return -1;
 // };
-// let pickPrimes = function (nums) {
-// 	let primes = [];
+// console.log(myIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
+// console.log(myIndexOf(['a', 'b', 'c', 'e'], 'e')); // 3
+// console.log(myIndexOf(['a', 'b', 'c', 'e'], 'z')); // -1
+// console.log(myIndexOf([43, -7, 11, 13, 43], 43)); // 0
+// console.log(myIndexOf([43, -7, 11, 13], 1)); // -1
 
-// 	for (let i = 0; i < nums.length; i++) {
-// 		let num = nums[i];
-// 		if (isPrime(num)) {
-// 			primes.push(num);
-// 		}
-// 	}
-// 	return primes;
+// 	TRIPLER
+// let tripler = function (arr) {
+// 	let resultArr = [];
+//   	for (let i = 0; i < arr.length; i++) {
+//       let originNums = arr[i];
+//       let newNums = originNums * 3;
+//       resultArr = resultArr.concat(newNums);
+//     }
+//   return resultArr;
 // }
-// console.log(pickPrimes([4, 7, 5, 12]));
-// console.log(pickPrimes([31, 25, 9, 16]));
+// console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
+// console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
+
+// 	LONG WORDS
+// let longWords = function(words) {
+// 	let filteredWords = [];
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			if (word.length > 5) {
+// 					filteredWords.push(word);
+// 			}
+// 	}
+// 	return filteredWords;
+// };
+// console.log(longWords(['bike', 'skateboard', 'scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
+// console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
+
+// 	REMOVE E WORDS
+// let removeEWords = function(sentence) {
+// 	let words = sentence.split(' ');
+// 	let filtered = [];
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			if (!word.toLowerCase().includes('e')) {
+// 					filtered.push(word);
+// 			}
+// 	}
+// 	return filtered.join(' ');
+// };
+// console.log(removeEWords('What time is it everyone?')); // 'What is it'
+// console.log(removeEWords('Enter the building')); // 'building'
+
+// 	MAX VALUE
+// let maxValue = function(nums) {
+// 	let max = null;
+// 	for (let i = 0; i < nums.length; i++) {
+// 			let num = nums[i];
+// 			if (max === null || num > max) {
+// 					max = num;
+// 			}
+// 	}
+// 	return max;
+// };
+// console.log(maxValue([4, 6, 3, 5, 42, 4])); // 42
+// console.log(maxValue([-2, -3, -7, 3 ])); // 3
+// console.log(maxValue([])); // null
+
+// // TWO SUM RECALL
+// let twoSum = function (arr, target) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 			let num1 = arr[i];
+// 			for (let j = i + 1; j < arr.length; j++) {
+// 					let num2 = arr[j];
+// 					if (num1 + num2 === target) {
+// 							return true;
+// 					}
+// 			}
+// 	}
+// 	return false;
+// };
+// console.log(twoSum([1, 7, 3, 0, 2], 5)); // true
+// console.log(twoSum([1, 7, 3, 0, 2], 6)); // false
+// console.log(twoSum([4, 6, 2, 3], 8)); // true
+// console.log(twoSum([4, 6, 2, 3], 11)); // false
+
+// 	REVERSE SENTENCE
+// let reverseSentence = function(sentence) {
+// 	let words = sentence.split(' ');
+// 	let newWords = [];
+// 	for (let i = words.length - 1; i >= 0; i--) {
+// 			newWords.push(words[i]);
+// 	}
+// 	let newSentence = newWords.join(' ');
+// 	return newSentence;
+// };
+// console.log(reverseSentence('I am pretty hungry')); // 'hungry pretty am I'
+// console.log(reverseSentence('follow the yellow brick road')); // 'road brick yellow the follow'
+
+// 	INITALS
+// let initials = function(name) {
+// 	let parts = name.split(' ');
+// 	let firstLetters = [];
+
+// 	for (let i = 0; i < parts.length; i++) {
+// 			let part = parts[i];
+// 			firstLetters.push(part[0].toUpperCase());
+// 	}
+// 	return firstLetters.join('');
+// };
+// console.log(initials('anna paschall')); // 'AP'
+// console.log(initials('Mary La Grange')); // 'MLG'
+// console.log(initials('brian crawford scott')); // 'BCS'
+// console.log(initials('Benicio Monserrate Rafael del Toro Sánchez')); // 'BMRDTS'
+
+// 	TWO DIMENSIONAL PRODUCT
+// let twoDimensionalProduct = function(arr) {
+// 	let product = 1;
+// 	for (let i = 0; i < arr.length; i++) {
+// 			let subArr = arr[i];
+// 			for (let j = 0; j < subArr.length; j++) {
+// 					let num = subArr[j];
+// 					product *= num;
+// 			}
+// 	}
+// 	return product;
+// };
+// let arr1 = [
+// 	[6, 4],
+// 	[5],
+// 	[3, 1]
+// ];
+// console.log(twoDimensionalProduct(arr1)); // 360
+// let arr2 = [
+// 	[11, 4],
+// 	[2]
+// ];
+// console.log(twoDimensionalProduct(arr2)); // 88
+
+// 	POPPER
+// let popper = function(array, num) {
+// 	let removed = [];
+// 	for (let i = 0; i < num; i++) {
+// 			let el = array.pop();
+// 			removed.push(el);
+// 	}
+// 	return removed;
+// };
+// let arr1 = ['a', 'b', 'c', 'd', 'e'];
+// console.log(popper(arr1, 2)); // [ 'e', 'd' ]
+// console.log(arr1); // [ 'a', 'b', 'c' ]
+// let arr2 = ['kale', 'spinach', 'collard greens', 'cabbage'];
+// console.log(popper(arr2, 1)); // [ 'cabbage' ]
+// console.log(arr2); // [ 'kale', 'spinach', 'collard greens' ]
+
+//  ABBREVIATE
+// let abbreviate = function(word) {
+// 	let str = '';
+//   for (let i = 0; i < word.length; i++) {
+//           let vowels = 'aeiou';
+//           let letter = word[i];
+//   			if (!vowels.includes(letter.toLowerCase())) {
+//             	str = str + letter; // str+=letter (same thing)
+//             }
+//         }
+// 	return str
+// }
+// console.log(abbreviate('wonderful')); // 'wndrfl'
+// console.log(abbreviate('mystery')); // 'mystry'
+// console.log(abbreviate('Accordian')); // 'ccrdn'
+
+//  ABBREVIATE WITH COUNTER
+// let abbreviate = function(word) {
+// 	let str = '';
+// 		let counter = 0;
+//   for (let i = 0; i < word.length; i++) {
+//           let vowels = 'aAeEiIoOuU';
+//           let letter = word[i];
+//   			if (!vowels.includes(letter)) {
+//             	// str = str + letter; // str+=letter (same thing)
+//               counter ++;
+
+//             }
+//         }
+// 	return counter
+// }
+// console.log(abbreviate('wonderful')); // 'wndrfl'
+// console.log(abbreviate('mystery')); // 'mystry'
+// console.log(abbreviate('Accordian')); // 'ccrdn'
+
+
+
+
+
+
+
+
+
+// UNCOMPRESS
+//Understand
+// take in a string as an argument
+// want to find the elements in string that are numbers
+// then uncompress the string
+//Steps
+//1 create a function
+//2 loop through the entire string parameter
+//3 as I'm looping I have to find the elements that are numbers
+//4 once I find a number take the preceeding letter and uncompress the letter
+//"uncompress"? x3 => xxx y4 => yyyy
+//5 add uncompressed strings to flobal final string
+//6 return the global final string
+//Number returns NaN if argument is not a number
+// let uncompress= function(compressedStr){
+// 	let uncompressedString = ""
+//     //iterating through compressedStr
+//     for(let i = 0; i < compressedStr.length; i++) {
+//       let currentEl = compressedStr[i] // the currentEl that I am at
+//       let is_NaN = Number(currentEl) // will return NaN or it will return the number
+//       if(is_NaN !==NaN){
+//       	let number = Number(currentEl)
+//         for(let j = 0; j < number; j++){
+//         	let letter = compressedStr[i-1]
+//             uncompressedString += letter
+//         }
+//       }
+//     }
+//     return uncompressedString
+// }
+// console.log(uncompress('x3y4z2')); // 'xxxyyyyzz'
+// console.log(uncompress('a5b2c4z1')); // 'aaaaabbccccz'
+// console.log(uncompress('b1o2t1')); // 'boot'
