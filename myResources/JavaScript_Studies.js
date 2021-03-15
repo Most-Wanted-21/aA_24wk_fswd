@@ -592,6 +592,81 @@
 // }
 // console.log(myArray)
 
+//  FUNCTION DECLARATION VS FUNCTION EXPRESSION
+// Function declaration
+// function sayHello(){
+//   console.log("hello");
+//   console.log("bye");
+// }
+// sayHello()
+// // Function expression
+// let sayHello2 = function() {
+//   console.log("Hello");
+//   console.log("bye");
+// }
+// sayHello2()
+
+//  FUNCTION EXPRESSION FIRST CLASS OBJECTS
+// let name = 'Alvin'
+// let age = 1000;
+// let getAvg = function(num1, num2) {
+//     return (num1 + num2)/2
+// };
+// console.log(name, age, getAvg(4, 2)) // "Alvin", 1000, 3
+// const arr = [getAvg, name, age];
+// console.log(arr[0](6,4)); // 5
+
+//  MUTABILITY
+// Immutable Types
+// Cannot be mutated (changed)
+// Examples
+// Number, e.g. 122
+// NaN
+// undefined
+// null
+// String, e.g. abc
+// re-assignable != mutable
+// Mutable Types
+// Can be mutated (changed)
+// Examples
+// Arrays, e.g. ['a', 'b', 'c']
+// Objects (we will see this later)
+// let str = "abc"
+// str[1] = 'x';
+// console.log(str) // 'abc';
+// let str = 'abc';
+// str += 'd'; // str = str + 'd';
+// console.log(str) // 'abcd'
+// let arr = ["a", "b", "c"];
+// arr[1] = "x";
+// console.log(arr) // ["a", "x", "c"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -714,7 +789,7 @@
 // console.log(threeOrSeven(42));  // => true
 // console.log(threeOrSeven(8));   // => false
 
-// SUM ARRAY
+//  SUM ARRAY
 // function sumArray(array) {
 //   let sum = 0;
 //   for (let i = 0; i < array.length; i += 1) {
@@ -744,7 +819,7 @@
 // console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
 // console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
 
-// DOUBLER
+//  DOUBLER
 // function doubler(numbers) {
 //   let doubledNums = [];
 //   for (i = 0; i < numbers.length; i++) {
@@ -816,26 +891,26 @@
 // Improve
 // define a function (function declaration syntax)
 // let pairsMaker = function (arr) {
-// 	// create a new array to store our result
-// 	let resultArr = [];
-// 	// iterate over the input array
-// 	for (let i = 0; i < arr.length; i++) {
-// 		// store the 2nd current element
-// 		let el1 = arr[i];
-// 		// iterate over the rest of the input array
-// 		for (let j = i + 1; j < arr.length; j++) {
-// 			// store the 2nd current element
-// 			let el2 = arr[j];
-// 			// push the 1st stored element and 2nd stored element into a new array
-// 			// let pair = [];
-// 			// pair.push(el1);
-// 			// pair.push(el2);
-// 			// push that new array into the resultArr
-// 			// resultArr.push(pair);
-// 			resultArr.push([el1, el2])
-// 		}
-// 	}
-// 	return resultArr;
+//   // 	// create a new array to store our result
+//   let resultArr = [];
+//   // iterate over the input array
+//   for (let i = 0; i < arr.length; i++) {
+//     // store the 2nd current element
+//     let el1 = arr[i];
+//     // iterate over the rest of the input array
+//     for (let j = i + 1; j < arr.length; j++) {
+//       // store the 2nd current element
+//       let el2 = arr[j];
+//       // push the 1st stored element and 2nd stored element into a new array
+//       // let pair = [];
+//       // pair.push(el1);
+//       // pair.push(el2);
+//       // push that new array into the resultArr
+//       // resultArr.push(pair);
+//       resultArr.push([el1, el2])
+//     }
+//   }
+//   return resultArr;
 // };
 // console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
 // // [ [ 'a', 'b' ],
@@ -845,9 +920,9 @@
 // //   [ 'b', 'd' ],
 // //   [ 'c', 'd' ] ]
 // console.log(pairsMaker(['Rosemary', 'Alex', 'Connor'])); // =>
-// // [ [ 'Rosemary', 'Alex' ],
-// //   [ 'Rosemary', 'Connor' ],
-// //   [ 'Alex', 'Connor' ] ]
+// [ [ 'Rosemary', 'Alex' ],
+//   [ 'Rosemary', 'Connor' ],
+//   [ 'Alex', 'Connor' ] ]
 
 //  TWO DIMENSIONAL SUM
 // let twoDimensionalSum = function (arr) {
@@ -872,55 +947,6 @@
 //   [3, 1, 2],
 // ];
 // console.log(twoDimensionalSum(arr2)); // 6
-
-//  FUNCTION DECLARATION VS FUNCTION EXPRESSION
-// Function declaration
-// function sayHello(){
-//   console.log("hello");
-//   console.log("bye");
-// }
-// sayHello()
-// // Function expression
-// let sayHello2 = function() {
-//   console.log("Hello");
-//   console.log("bye");
-// }
-// sayHello2()
-
-//  FUNCTION EXPRESSION FIRST CLASS OBJECTS
-// let name = 'Alvin'
-// let age = 1000;
-// let getAvg = function(num1, num2) {
-//     return (num1 + num2)/2
-// };
-// console.log(name, age, getAvg(4, 2)) // "Alvin", 1000, 3
-// const arr = [getAvg, name, age];
-// console.log(arr[0](6,4)); // 5
-
-//  MUTABILITY
-// Immutable Types
-// Cannot be mutated (changed)
-// Examples
-// Number, e.g. 122
-// NaN
-// undefined
-// null
-// String, e.g. abc
-// re-assignable != mutable
-// Mutable Types
-// Can be mutated (changed)
-// Examples
-// Arrays, e.g. ['a', 'b', 'c']
-// Objects (we will see this later)
-// let str = "abc"
-// str[1] = 'x';
-// console.log(str) // 'abc';
-// let str = 'abc';
-// str += 'd'; // str = str + 'd';
-// console.log(str) // 'abcd'
-// let arr = ["a", "b", "c"];
-// arr[1] = "x";
-// console.log(arr) // ["a", "x", "c"];
 
 //  ITERATE ODD #S WITH A FOR LOOP
 // var ourArray = [];
@@ -990,6 +1016,11 @@
 //     console.log(dog1, dog2)
 //   }
 // }
+
+
+
+
+
 // *******************THURSDAY / WK1D4*********************
 // 	HELPER FUNCTION
 // let isPrime = function (num) {
@@ -1213,6 +1244,99 @@
 // console.log(popper(arr2, 1)); // [ 'cabbage' ]
 // console.log(arr2); // [ 'kale', 'spinach', 'collard greens' ]
 
+// 	CHOOSE PRIMES
+// let prime = function (val) {
+// 	if (val < 2) {
+// 		return false
+// 	}
+// 	for (let i = 2; i < val; i++) {
+// 		if (val % i === 0) {
+// 			return false
+// 		}
+// 	}
+//  return true;
+// }
+// console.log(prime());
+// let choosePrimes = function (nums) {
+// let resultArr = [];
+// for (let i = 0; i < nums.length; i++) {
+// 	let originalNums = nums[i];
+// 		 if (prime(originalNums) === true) {
+// 			resultArr.push(originalNums)
+// 		}
+// }
+// return resultArr;
+// }
+// console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
+// console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
+
+// console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
+
+// 	CHOOSE PRIMES (OWN SOLVING WITH COLLEAGUE)
+// let prime = function (val) {
+// 	if (val < 2) {
+// 		return false
+// 	}
+// 	for (let i = 2; i < val; i++) {
+// 		if (val % i === 0) {
+// 			return false
+// 		}
+// 	}
+//  return true;
+// }
+// console.log(prime());
+// let choosePrimes = function (nums) {
+// let resultArr = [];
+// for (let i = 0; i < nums.length; i++) {
+// 	let originalNums = nums[i];
+// 		 if (prime(originalNums)) {
+// 			resultArr.push(originalNums)
+// 		}
+// }
+// return resultArr;
+// }
+// let moreThan20 = function (arr) {
+// let res = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 				let num = arr[i];
+// 			if (num > 20) {
+// 		res.push(num);
+// 				}
+// 		}
+// return res;
+// }
+// console.log(moreThan20([36, 48, 9, 13, 19]));
+// console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
+// console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
+
+// 	FIZZ BUZZ RECALL
+// let fizzBuzz = function(max) {
+// 	let nums = [];
+// 	for (let i = 1; i < max; i++) {
+// 			if ((i % 3 === 0 || i % 5 === 0) && !(i % 3 === 0 && i % 5 === 0 )) {
+// 					nums.push(i);
+// 			}
+// 	}
+// 	return nums;
+// };
+// console.log(fizzBuzz(12)); // [ 3, 5, 6, 9, 10 ]
+// console.log(fizzBuzz(20)); // [ 3, 5, 6, 9, 10, 12, 18 ]
+
+// 	LONGEST WORD
+// let longestWord = function(sentence) {
+// 	let words = sentence.split(' ');
+// 	let longestWord = '';
+
+// 	for(let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			if(word.length > longestWord.length) {
+// 					longestWord = word;
+// 			}
+// 	}
+
+// 	return longestWord;
+// };
+
 //  ABBREVIATE
 // let abbreviate = function(word) {
 // 	let str = '';
@@ -1239,7 +1363,6 @@
 //   			if (!vowels.includes(letter)) {
 //             	// str = str + letter; // str+=letter (same thing)
 //               counter ++;
-
 //             }
 //         }
 // 	return counter
@@ -1248,44 +1371,312 @@
 // console.log(abbreviate('mystery')); // 'mystry'
 // console.log(abbreviate('Accordian')); // 'ccrdn'
 
-
-
-
-
-
-
-
-
-// UNCOMPRESS
-//Understand
-// take in a string as an argument
-// want to find the elements in string that are numbers
-// then uncompress the string
-//Steps
-//1 create a function
-//2 loop through the entire string parameter
-//3 as I'm looping I have to find the elements that are numbers
-//4 once I find a number take the preceeding letter and uncompress the letter
-//"uncompress"? x3 => xxx y4 => yyyy
-//5 add uncompressed strings to flobal final string
-//6 return the global final string
-//Number returns NaN if argument is not a number
-// let uncompress= function(compressedStr){
-// 	let uncompressedString = ""
-//     //iterating through compressedStr
-//     for(let i = 0; i < compressedStr.length; i++) {
-//       let currentEl = compressedStr[i] // the currentEl that I am at
-//       let is_NaN = Number(currentEl) // will return NaN or it will return the number
-//       if(is_NaN !==NaN){
-//       	let number = Number(currentEl)
-//         for(let j = 0; j < number; j++){
-//         	let letter = compressedStr[i-1]
-//             uncompressedString += letter
-//         }
-//       }
-//     }
-//     return uncompressedString
+// 	PRODUCT ARRAY
+// let productWithReduce = function(nums) {
+// 	let product = 1;
+// 	for (let i = 0; i < nums.length; i++) {
+// 			let num = nums[i];
+// 			product *= num;
+// 	}
+// 	return product
 // }
+// console.log(productWithReduce([10, 3, 5, 2])); // 300
+// console.log(productWithReduce([4, 3])); // 12
+
+// 	REMOVE LAST VOWEL RECALL
+// let removeLastVowel = function(word) {
+// 	let vowels = 'aeiou';
+// 	for(let i = word.length - 1; i >= 0; i--) {
+// 			let char = word[i];
+// 			if (vowels.includes(char)) {
+// 					return word.slice(0, i) + word.slice(i + 1);
+// 			}
+// 	}
+// 	return word;
+// };
+// console.log(removeLastVowel('bootcamp')); // 'bootcmp'
+// console.log(removeLastVowel('better')); // 'bettr'
+// console.log(removeLastVowel('graph')); // 'grph'
+// console.log(removeLastVowel('thy')); // 'thy'
+
+// 	ABBREVIATE WORDS
+// let removeVowels = function(word) {
+// 	let vowels = 'aeiou';
+// 	let newWord = '';
+// 	for (let i = 0; i < word.length; i++) {
+// 			let char = word[i];
+// 			if (!vowels.includes(char)) {
+// 					newWord += char;
+// 			}
+// 	}
+// 	return newWord;
+// };
+// let abbreviateWords = function(sentence) {
+// 	let words = sentence.split(' ');
+// 	let newWords = [];
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			if (word.length > 4) {
+// 					newWords.push(removeVowels(word));
+// 			} else {
+// 					newWords.push(word);
+// 			}
+// 	}
+// 	return newWords.join(' ');
+// };
+// console.log(abbreviateWords('what a wonderful place to live')); // what a wndrfl plc to live
+// console.log(abbreviateWords('she sends an excellent message ')); // she snds an xcllnt mssg
+
+// 	CONTAINS WORD
+// let containsWord = function(sentence, targetWord) {
+// 	let words = sentence.split(' ');
+
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+
+// 			if (word.toLowerCase() === targetWord.toLowerCase()) {
+// 					return true;
+// 			}
+// 	}
+
+// 	return false;
+// };
+
+// console.log(containsWord('sounds like a plan', 'like')); // true
+// console.log(containsWord('They are great', 'they')); // true
+// console.log(containsWord('caterpillars are great animals', 'cat')); // false
+// console.log(containsWord('Cast the net', 'internet')); // false
+
+// 	UNCOMPRESS
+// let uncompress = function(str) {
+// 	let newStr = '';
+// 	for (let i = 0; i < str.length; i += 2) {
+// 			let char = str[i];
+// 			let num = Number(str[i + 1]);
+// 			for (let times = 0; times < num; times += 1) {
+// 					newStr += char;
+// 			}
+// 	}
+// 	return newStr;
+// };
 // console.log(uncompress('x3y4z2')); // 'xxxyyyyzz'
 // console.log(uncompress('a5b2c4z1')); // 'aaaaabbccccz'
 // console.log(uncompress('b1o2t1')); // 'boot'
+
+// // HIPSTERFY
+// let removeLastVowel = function(word) {
+// 	let vowels = 'aeiou';
+// 	for(let i = word.length - 1; i >= 0; i--) {
+// 			let char = word[i];
+// 			if (vowels.includes(char)) {
+// 					return word.slice(0, i) + word.slice(i + 1);
+// 			}
+// 	}
+// 	return word;
+// };
+// let hipsterfy = function(sentence) {
+// 	let newWords = [];
+// 	let words = sentence.split(' ');
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			newWords.push(removeLastVowel(word));
+// 	}
+// 	return newWords.join(' ');
+// };
+// console.log(hipsterfy('When should everyone wake up?')); // 'Whn shold everyon wak p?'
+// console.log(hipsterfy('get ready for our bootcamp')); // 'gt redy fr or bootcmp'
+// console.log(hipsterfy('panthers are great animals')); // 'panthrs ar gret animls'
+
+// // LEAST COMMON MULTIPLE RECALL
+// let leastCommonMultiple = function(num1, num2) {
+// 	for (let i = 1; i <= (num1 * num2); i++) {
+// 			if (i % num1 === 0 && i % num2 === 0) {
+// 					return i;
+// 			}
+// 	}
+// };
+// console.log(leastCommonMultiple(4, 6)); // 12
+// console.log(leastCommonMultiple(3, 5)); // 15
+// console.log(leastCommonMultiple(2, 10)); // 10
+
+// // ROATATE
+// let rotate = function(array, num) {
+// 	if (num > 0) {
+// 			for (let i = 0; i < num; i++) {
+// 					let el = array.pop();
+// 					array.unshift(el);
+// 			}
+// 	} else {
+// 			for (let i = 0; i < -(num); i++) {
+// 					let el = array.shift();
+// 					array.push(el);
+// 			}
+// 	}
+// };
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// rotate(arr, 2);
+// console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
+// let animals = ['wombat', 'koala', 'opossum', 'kangaroo'];
+// rotate(animals, -1);
+// console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
+
+// // ADDITION MUTATOR
+// let additionMutator = function(numbers, n) {
+// 	for (let i = 0; i < numbers.length; i++) {
+// 			numbers[i] += n;
+// 	}
+// }
+// let nums1 = [3, 7, 1, 2];
+// additionMutator(nums1, 4);
+// console.log(nums1);     // [ 7, 11, 5, 6 ]
+// let nums2 = [11, 9, 4];
+// additionMutator(nums2, -1);
+// console.log(nums2);     // [ 10, 8, 3 ]
+
+// // ALTERNATING WORDS
+// let alternatingWords = function(words) {
+// 	for (let i = 0; i < words.length; i++) {
+// 			if (i % 2 === 0) {
+// 					words[i] = words[i].toUpperCase();
+// 			} else {
+// 					words[i] = words[i].toLowerCase();
+// 			}
+// 	}
+// };
+// let words1 = ['Belka', 'STRELKA', 'laika', 'DEZIK', 'Tsygan'];
+// alternatingWords(words1);
+// console.log(words1); // [ 'BELKA', 'strelka', 'LAIKA', 'dezik', 'TSYGAN' ]
+// let words2 = ['Yellowstone', 'Yosemite', 'Zion', 'Acadia'];
+// alternatingWords(words2);
+// console.log(words2); // [ 'YELLOWSTONE', 'yosemite', 'ZION', 'acadia' ]
+
+// // REPEATING TRANSLATE
+// // Write a function `repeatingTranslate` that accepts a sentence as an argument.
+// // The function should translate the sentence according to the following rules:
+// //
+// // - words that are shorter than 3 characters are unchanged
+// // - words that are 3 characters or longer are translated according to the
+// //   following rules:
+// //   - if the word ends with a vowel, simply repeat the word twice (example:
+// //     'like'->'likelike')
+// //   - if the word ends with a non-vowel, repeat all letters that come after the
+// //     word's last vowel, including the last vowel itself (example:
+// //     'trash'->'trashash')
+// //
+// // Note that if words are capitalized in the original sentence, they should remain
+// // capitalized in the translated sentence. Vowels are the letters a, e, i, o, u.
+// //
+// // Can you reduce the problem into helper functions?
+// let repeatingTranslate = function(sentence) {
+// 	let words = sentence.split(' ');
+// 	let newWords = [];
+// 	for (let i = 0; i < words.length; i++) {
+// 			let word = words[i];
+// 			if (word.length < 3) {
+// 					newWords.push(word);
+// 			} else {
+// 					newWords.push(translateWord(word));
+// 			}
+// 	}
+// 	return newWords.join(' ');
+// };
+// let translateWord = function(word) {
+// 	let vowels = 'aeiou';
+// 	let lastChar = word[word.length - 1];
+// 	if (vowels.includes(lastChar)) {
+// 			return word + word;
+// 	}
+// 	let i = word.length - 1;
+// 	while (i >= 0) {
+// 			if (vowels.includes(word[i])) {
+// 					return word + word.slice(i);
+// 			}
+// 			i--;
+// 	}
+// };
+// console.log(repeatingTranslate("we like to go running fast"));  // "we likelike to go runninging fastast"
+// console.log(repeatingTranslate("he cannot find the trash"));    // "he cannotot findind thethe trashash"
+// console.log(repeatingTranslate("pasta is my favorite dish"));   // "pastapasta is my favoritefavorite dishish"
+// console.log(repeatingTranslate("her family flew to France"));   // "herer familyily flewew to FranceFrance"
+
+// // MAX IN MATRIX
+// function maxInMatrix(matrix) {
+//   let currentMax = -Infinity;
+//   for (let row = 0 ; row < matrix.length ; row++) {
+//     for (let col = 0 ; col < matrix[0].length ; col++) {
+//       if (matrix[row][col] > currentMax) {
+//         currentMax = matrix[row][col];
+//       }
+//     }
+//   }
+//   return currentMax;
+// }
+// matrix = [[11,  2,-99],
+//           [20, 19, 10],
+//           [47, 72, 56]]
+// console.log(maxInMatrix(matrix)); // 72
+
+// // MAX IN COLUMNS
+// function maxColumn(matrix) {
+//   const height = matrix.length;
+//   const width = matrix[0].length;
+//   const maxColumns = [];
+//   for (let col = 0 ; col < width ; col++) {
+//     let colMax = matrix[0][col];
+//     for (let row = 1 ; row < height ; row++) {
+//         if (matrix[row][col] > colMax) {
+//             colMax = matrix[row][col];
+//         }
+//     }
+//     maxColumns.push(colMax);
+//   }
+//   return maxColumns;
+// }
+// matrix = [[ 5,  9, 21],
+//           [ 9, 19,  6],
+//           [12, 14, 15]]
+// console.log(maxColumn(matrix)); // [12, 19, 21]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ***************** FRIDAY W1D5 ******************
+
+
+
+
+//  	HAS THREE VOWELS
+// let hasThreeVowels = function (str) {
+// 	let vowels = 'aeiouAEIOU';
+//   	let holder = [];
+//   	for (let i = 0; i < str.length; i++) {
+// 		let char = str[i];
+//   		if (vowels.includes(char) && !(holder.includes(char))) {
+//         	holder.push(char);
+//         }
+//   		if (holder.length >= 3) {
+//             return true;
+//             }
+//     	}
+// 		return false;
+// }
+// console.log(hasThreeVowels('delicious'));       //  true
+// console.log(hasThreeVowels('bootcamp prep'));   //  true
+// console.log(hasThreeVowels('bootcamp'));        //  false
+// console.log(hasThreeVowels('dog'));             //  false
+// console.log(hasThreeVowels('go home'));         //  false
