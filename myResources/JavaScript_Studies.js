@@ -1,3 +1,5 @@
+// ************************* JS Notes *************************
+
 //  HOW TO SOLVE ANY PROBLEM
 // Understand the problem
 // Make a plan
@@ -1638,27 +1640,7 @@
 // console.log(maxColumn(matrix)); // [12, 19, 21]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ***************** FRIDAY W1D5 ******************
-
-
-
+// ***************** FRIDAY / W1D5 ******************
 
 //  	HAS THREE VOWELS
 // let hasThreeVowels = function (str) {
