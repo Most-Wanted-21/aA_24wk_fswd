@@ -1,5 +1,17 @@
-let manager = {};
+// describe("keysInObject()", function() {
+//   it("should return an array containing all object keys",
+function() {
+    const animals = keysInObject({ dog: "Wolfie", cat: "Jet", bison: "Bilbo" });
+    const animalResult = ["dog", "cat", "bison"];
 
-manager["salary"] = "$$$";
+    const foods = keysInObject({
+      apple: "tart",
+      lemon: "sour",
+      mango: "sweet"
+    });
+    const foodResult = ["apple", "lemon", "mango"];
 
-console.log(manager.salary)
+    assert.deepEqual(animals, animalResult);
+    assert.deepEqual(foods, foodResult);
+  });
+});
