@@ -14,7 +14,15 @@
 */
 
 function commonValues(obj1, obj2) {
-    
+    const result = [];
+
+    Object.values(obj1).forEach(val => {
+        if (Object.values(obj2).includes(val)) {
+            result.push(val);
+        }
+    });
+
+    return result;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
