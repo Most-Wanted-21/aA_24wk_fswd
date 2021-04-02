@@ -645,3 +645,13 @@
 // console.log(myArray)
 
 // ITERATE ODD #S W FOR LOOP
+
+
+
+
+function multilplyAll(arr) {
+  var product = 1;
+
+  for (var i = 0; i <)
+
+}
