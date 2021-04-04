@@ -348,10 +348,10 @@
 //       answer = "bird";
 //       break;
 //     case "c":
-//       answer = "cat";
+//       return "cat";
 //       break;
 //     default:
-//       answer = "stuff";
+//       return "stuff";
 //       break;
 //   }
 //   return answer;
@@ -381,6 +381,30 @@
 //   return answer;
 // }
 // console.log(sequentialSizes(7))
+
+// // REPLACING IF ELSE CHAINS WITH SWTICH
+// function chainToSwitch(val) {
+//   var answer = "";
+//   switch(val) {
+//     case 'bob':
+//     answer = 'Marley';
+//     break;
+//     case 42:
+//     answer = 'The Answer';
+//     break;
+//     case 1:
+//     answer = 'There is no #1';
+//     break;
+//     case 99:
+//     answer = 'Missed me by this much!';
+//     break;
+//     case 7:
+//     answer = 'Ate Nine';
+//     break;
+//   }
+//   return answer;
+// }
+// chainToSwitch(7);
 
 //  RETURN BOOLEAN FROM FUNCTION
 // function isLess(a, b) {
@@ -425,7 +449,8 @@
 // cc(2); cc(3); cc("K"); cc("A");; cc(5)
 //  console.log(cc(7))
 
-//  BUILD JAVASCRIPT OBJECTS (ourDog is an object; properties are before :; values after :)
+//  BUILD JAVASCRIPT OBJECTS (ourDog is an object; properties are before :;
+// values after:)
 // var ouDog = {
 //   "name": "Camper",
 //   "legs": 4,
