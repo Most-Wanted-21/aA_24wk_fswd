@@ -608,7 +608,7 @@
 // var secondTree = myPlants[1].list[1];
 // console.log(secondTree)
 
-//  RECORD COLLECTION
+// //  RECORD COLLECTION
 // var collection = {
 //   "2548": {
 //     "album": "Slippery When Wet",
@@ -618,7 +618,7 @@
 //       "You Give Love a Bad Name"
 //     ]
 //   },
-//   "2408": {
+//   "2468": {
 //     "album": "1999",
 //     "Artist": "Prince",
 //     "tracks": [
@@ -646,10 +646,10 @@
 //   }
 //   return collection;
 // }
-// updateRecords(2408, "tracks", "test");
+// updateRecords(2468, "tracks", "test");
 // console.log(updateRecords(5439, "artist", "ABBA"));
 
-//  ITERATE WITH WHILE LOOPS
+// // ITERATE WITH WHILE LOOPS
 // var myArray = [];
 // var i = 0;
 // while (i < 5) {
@@ -657,6 +657,14 @@
 //   i++;
 // }
 // console.log(myArray)
+// // OR
+// var myArray = [];
+// var i = 5;
+// while (i > -1) {
+//     myArray.push(i);
+//     i--;
+// }
+// console.log(myArray);
 
 //  ITERATE WITH FOR LOOPS
 // var ourArray = [];
@@ -671,12 +679,12 @@
 
 // ITERATE ODD #S W FOR LOOP
 
+// // ITERATE THROUGH AN ARR WITH FOR LOOP
+// var myArr = [ 2, 3, 4, 5, 6];
+// var total = 0;
+// for (let i = 0; i < myArr.length; i++) {
+//    total += myArr[i];
+// }
+// console.log(total)
 
-
-
-function multilplyAll(arr) {
-  var product = 1;
-
-  for (var i = 0; i <)
-
-}
+// NESTING FOR LOOPS
