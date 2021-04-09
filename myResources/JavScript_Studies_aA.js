@@ -311,11 +311,8 @@
 
 //  NESTED LOOPS PAIRS IN ARRAYS
 // sayHello = "Hello"
-// debugger
 // for (let i = 0; i < 3; i++) {
-//     debugger
 //   for (let j = 0; j < 3; j++) {
-//       debugger
 //     console.log(sayHello);
 //   }
 // }
@@ -324,10 +321,8 @@
 //   ['laika', 'dezik', "kevin"] //2
 //  ]
 // for(let i = 0; i < dogs.length; i++) {
-// debugger
 // let row = dogs[i]
 // for(let j = i + 0; j < row.length; j++) {
-// debugger
 // let dog = row[j]
 // console.log(dog)
 // }
@@ -337,10 +332,8 @@
 // let dogs = ['belka', 'strelka', 'laika', 'dezik']
 // for(let i = 0; i < dogs.length; i++) {
 //   let dog1 = dogs[i];
-//   debugger
 //   for(let j = i + 1; j < dogs.length; j++) {
 //     let dog2 = dogs[j]
-//     debugger
 //     console.log(dog1, dog2)
 //   }
 // }
@@ -382,10 +375,10 @@
 //     return lengthOfWord < 5
 // }
 // function removeSmallWords(str) {
-// 	debugger
+//
 // 	let results = [];
 // 	let split = str.split(' ');
-// 	debugger
+//
 //   for(let i = 0; i < split.length; i++) {
 //   	let word = split[i];
 //     if (!isLessThanFive(word)) {
@@ -999,7 +992,7 @@
 // function elephantCollector() {
 //   const elephants = [ 'dumbo' ];
 //   return function(name) {
-//       debugger
+//
 //       elephants.push(name);
 //       return elephants;
 //   }
@@ -1007,7 +1000,7 @@
 // const elephantParade = elephantCollector(); // ?
 // const elephantParade1 = elephantCollector();
 // //millions of lines of code here
-// debugger
+//
 // console.log(elephantParade("Obi"))
 // console.log(elephantParade("Giraffe"))
 // console.log(elephantParade("Gerald"))
