@@ -698,3 +698,12 @@
 // console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
 
 // ITERATE WITH JAVASCRIPT DO...WHILE LOOPS
+// Setup
+var myArray = [];
+var i = 10;
+
+// Only change code below this line
+while (i < 5) {
+  myArray.push(i);
+  i++;
+}
