@@ -697,13 +697,25 @@
 // }
 // console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
 
-// ITERATE WITH JAVASCRIPT DO...WHILE LOOPS
-// Setup
-var myArray = [];
-var i = 10;
+// // ITERATE WITH JAVASCRIPT DO...WHILE LOOPS
+// var myArray = [];
+// var i = 10;
+// do {
+//   myArray.push(i);
+//   i++;
+// }
+// while (i < 5);
+// console.log(i)
 
-// Only change code below this line
-while (i < 5) {
-  myArray.push(i);
-  i++;
-}
+// // REPLACE LOOPS USING RECURSION
+// function sum(arr, n) {
+//   if (n <= 0) {
+//     return 0;
+//   } else {
+//     return sum(arr, n - 1) + arr[n - 1];
+//   }
+// }
+// console.log(sum([1], 0))
+// console.log(sum([2, 3, 4], 1))
+// console.log(sum([2, 3, 4, 5], 3))
+
