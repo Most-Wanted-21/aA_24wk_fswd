@@ -757,4 +757,25 @@
 // var data = lookUpProfile("Akira", "likes");
 // console.log(data);
 
+// // GENERATE RANDOM FRACTIONS
+// function randomFraction() {
+//   return Math.random();
+// }
+
+// // GENERATE RANDOM WHOLE NUMBERS
+// function randomWholeNum() {
+//   return Math.floor(Math.random() * 10);
+// }
+
+// // GENERATE RANDOM WHOLE NUMBERS WITHIN A RANGE
+// function randomRange(myMin, myMax) {
+//   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin
+// }
+// console.log(randomRange(5, 10))
+
+// // parseInt Function
+// function convertToInteger(str) {
+//   return parseInt(str)
+// }
+// console.log(convertToInteger("56"));
 
