@@ -773,9 +773,14 @@
 // }
 // console.log(randomRange(5, 10))
 
-// // parseInt Function
+// // PARSINT FUNCTION
 // function convertToInteger(str) {
 //   return parseInt(str)
 // }
 // console.log(convertToInteger("56"));
 
+// PARSEINT FUNCTION WITH RADIX
+function convertToInteger(str) {
+  return parseInt(str, 2)
+}
+console.log(convertToInteger("10011"));
