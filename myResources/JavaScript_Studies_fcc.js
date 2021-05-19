@@ -779,8 +779,54 @@
 // }
 // console.log(convertToInteger("56"));
 
-// PARSEINT FUNCTION WITH RADIX
-function convertToInteger(str) {
-  return parseInt(str, 2)
-}
-console.log(convertToInteger("10011"));
+// // PARSEINT FUNCTION WITH RADIX
+// function convertToInteger(str) {
+//   return parseInt(str, 2)
+// }
+// console.log(convertToInteger("10011"));
+
+// CONDITIONAL TERNARY OPERATOR
+// instead of using the following if/else statement
+// function findGreater(a, b) {
+//   if(a > b) {
+//     return "a is greater";
+//   }
+//   else {
+//     return "b is greater";
+//   }
+// }
+// // Use the ternary operator as such
+// function findGreater(a, b) {
+//   return a > b ? "a is greater" : "b is greater";
+// }
+// // OR
+// function checkEqual(a, b) {
+//   return a == b ? "Equal" : "Not Equal"
+// }
+// checkEqual(1, 2);
+
+// // MULTIPLE CONDITIONAL TERNARY OPERATORS
+// function findGreaterOrEqual(a, b) {
+//   if (a === b) {
+//     return "a and b are equal";
+//   }
+//   else if (a > b) {
+//     return "a is greater";
+//   }
+//   else {
+//     return "b is greater";
+//   }
+// }
+// function findGreaterOrEqual(a, b) {
+//   return (a === b) ? "a and b are equal"
+//     : (a > b) ? "a is greater"
+//     : "b is greater";
+// }
+// function checkSign(num) {
+//   return (num > 0) ? "positive"
+//     : (num < 0) ? "negative"
+//     : "zero";
+// }
+// checkSign(10);
+
+
