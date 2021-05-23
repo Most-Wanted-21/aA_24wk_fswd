@@ -829,4 +829,40 @@
 // }
 // checkSign(10);
 
-
+// RECURSION TO CREATE COUNTDOWN
+// function countdown(n) {
+//   if (n < 1) return [];
+//   if (n === 1) return [1];
+//   const output = [n];
+//   return output.concat(countdown(n - 1));
+//   }
+// console.log(countdown(10));
+// // Solutions
+// // Solution 1
+// function countdown(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const arr = countdown(n - 1);
+//     arr.unshift(n);
+//     return arr;
+//   }
+// }
+// // Solution 2
+// function countdown(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const arr = countdown(n - 1);
+//     arr.splice(0, 0, n);
+//     return arr;
+//   }
+// }
+// // Solution 3
+// function countdown(n){
+//    return n < 1 ? [] : [n].concat(countdown(n - 1));
+// }
+// // Solution 4
+// function countdown(n){
+//    return n < 1 ? [] : [n, ...countdown(n - 1)];
+// }
