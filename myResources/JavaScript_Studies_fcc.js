@@ -866,3 +866,30 @@
 // function countdown(n){
 //    return n < 1 ? [] : [n, ...countdown(n - 1)];
 // }
+
+// RECURSION TO CREATE A RANGE OF NUMBERS
+// Solutions
+// Solution 1
+// function rangeOfNumbers(startNum, endNum) {
+//   if (endNum - startNum === 0) {
+//     return [startNum];
+//   } else {
+//     var numbers = rangeOfNumbers(startNum, endNum - 1);
+//     numbers.push(endNum);
+//     return numbers;
+//   }
+// }
+// console.log(rangeOfNumbers(5, 7))
+// // Solution 2
+// function rangeOfNumbers(startNum, endNum) {
+//   return startNum === endNum
+//     ? [startNum]
+//     : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+// }
+// // Solution 3
+// function rangeOfNumbers(startNum, endNum) {
+//   return startNum === endNum
+//     ? [startNum]
+//     : [...rangeOfNumbers(startNum, endNum - 1), endNum ];
+// }
+
