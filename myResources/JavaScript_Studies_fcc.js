@@ -922,4 +922,46 @@
 // }
 // editInPlace();
 
-// PREVENT OBJECT MUTATION
+// // PREVENT OBJECT MUTATION OBJECT FREEZE
+// function freezeObj() {
+//   const MATH_CONSTANTS = {
+//     PI: 3.14
+//   };
+// Object.freeze(MATH_CONSTANTS); //added the .freeze here
+//   try {
+//     MATH_CONSTANTS.PI = 99;
+//   } catch(ex) {
+//     console.log(ex);
+//   }
+//   return MATH_CONSTANTS.PI;
+// }
+// const PI = freezeObj();
+// console.log(freezeObj())
+
+// // ARROW FUNCTIONS TO WRITE CONCISE ANONYMOUS FUNCIONS
+// // from this
+// const myFunc = function() {
+//   const myVar = "value";
+//   return myVar;
+// }
+// // to this
+// const myFunc = () => "value";
+
+// // ARROW FUNCTIONS WITH PARAMETERS
+// // If an arrow function has a single parameter, the parentheses
+// // enclosing the parameter may be omitted.
+// const doubler = item => item * 2;
+// console.log(doubler(10))
+// // or
+// const multiplier = (item, multi) => item * multi;
+// console.log(multiplier(4, 2))
+// // or
+// const myConcat = (arr1, arr2) => arr1.concat(arr2);
+// console.log(myConcat([1, 2], [3, 4, 5]));
+
+// // SET DEFAULT PARAMETERS FOR FUNCTIONS
+// const greeting = (name = "Anonymous") => "Hello " + name;
+// console.log(greeting("John"));
+// console.log(greeting());
+// // or
+// const increment = (number, value = 1) => number + value;
