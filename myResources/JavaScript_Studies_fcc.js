@@ -965,3 +965,29 @@
 // console.log(greeting());
 // // or
 // const increment = (number, value = 1) => number + value;
+
+// // REST PARAMETER WITH FUNCTION PARAMETERS
+// // The rest parameter eliminates the need to check the args array
+// // and allows us to apply map(), filter() and reduce() on the
+// // parameters array.
+// function howMany(...args) {
+//   return "You have passed " + args.length + " arguments.";
+// }
+// console.log(howMany(0, 1, 2));
+// console.log(howMany("string", null, [1, 2, 3], {}));
+// or
+// const sum = (...args) => {
+//   return args.reduce((a, b) => a + b, 0);
+// }
+// console.log(sum(1, 2, 3, 4));
+
+// // SPREAD PARAMETER TO EVALUATE ARRAYS IN-PLACE
+// // ...arr returns an unpacked array.In other words, it spreads the array.
+// //   However, the spread operator only works in -place, like in an argument
+// // to a function or in an array literal.
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+// let arr2;
+// arr2 = [...arr1];
+// console.log(arr2);
+
+// USE DESTRUCTING ASSIGNMENT TO EXTRACT VALUES FROM OBJECTS
