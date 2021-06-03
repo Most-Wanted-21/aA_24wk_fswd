@@ -990,7 +990,7 @@
 // arr2 = [...arr1];
 // console.log(arr2);
 
-// // USE DESTRUCTING ASSIGNMENT TO EXTRACT VALUES FROM OBJECTS
+// // USE DESTRUCTURING ASSIGNMENT TO EXTRACT VALUES FROM OBJECTS
 // // Consider the following ES5 code:
 // // const user = { name: 'John Doe', age: 34 };
 // // const name = user.name;
@@ -1006,7 +1006,7 @@
 // const { today, tomorrow } = HIGH_TEMPERATURES;
 // console.log(today)
 
-// // USE DESTRUCTING ASSIGNMENT TO ASSIGN VARIABLES FORM OBJECTS
+// // USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FORM OBJECTS
 // // Destructuring allows you to assign a new variable name when extracting values.
 // // You can do this by putting the new name after a colon when assigning the value.
 // // Using the same object from the last example:
@@ -1024,4 +1024,39 @@
 // const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 // console.log(highToday)
 
+// // // USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM NESTED OBJECTS
+// // const user = {
+// //   johnDoe: {
+// //     age: 34,
+// //     email: 'johnDoe@freeCodeCamp.com'
+// //   }
+// // };
+// // // Here's how to extract the values of object properties and assign them to
+// // // variables with the same name:
+// // const { johnDoe: { age, email } } = user;
+// // // And here's how you can assign an object properties' values to variables
+// // // with different names:
+// // const { johnDoe: { age: userAge, email: userEmail }} = user;
+// // console.log(userEmail)
+// const LOCAL_FORECAST = {
+//   yesterday: { low: 61, high: 75 },
+//   today: { low: 64, high: 77 },
+//   tomorrow: { low: 68, high: 80 }
+// };
+// const { today: { low: lowToday, high: highToday}} = LOCAL_FORECAST
+// console.log(lowToday, highToday)
 
+// USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM ARRAYS
+// One key difference between the spread operator and array destructuring is that
+// the spread operator unpacks all contents of an array into a comma - separated
+// list.Consequently, you cannot pick or choose which elements you want to assign
+// to variables.
+// Destructuring an array lets us do exactly that:
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+// The console will display the values of a and b as 1, 2.
+// The variable a is assigned the first value of the array, and b is assigned the
+// second value of the array.We can also access the value at any index in an array
+// with destructuring by using commas to reach the desired index:
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
