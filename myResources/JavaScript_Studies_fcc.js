@@ -990,4 +990,38 @@
 // arr2 = [...arr1];
 // console.log(arr2);
 
-// USE DESTRUCTING ASSIGNMENT TO EXTRACT VALUES FROM OBJECTS
+// // USE DESTRUCTING ASSIGNMENT TO EXTRACT VALUES FROM OBJECTS
+// // Consider the following ES5 code:
+// // const user = { name: 'John Doe', age: 34 };
+// // const name = user.name;
+// // const age = user.age;
+// // name would have a value of the string John Doe, and age would have the number 34.
+// // Here's an equivalent assignment statement using the ES6 destructuring syntax:
+// // const { name, age } = user;
+// const HIGH_TEMPERATURES = {
+//   yesterday: 75,
+//   today: 77,
+//   tomorrow: 80
+// };
+// const { today, tomorrow } = HIGH_TEMPERATURES;
+// console.log(today)
+
+// // USE DESTRUCTING ASSIGNMENT TO ASSIGN VARIABLES FORM OBJECTS
+// // Destructuring allows you to assign a new variable name when extracting values.
+// // You can do this by putting the new name after a colon when assigning the value.
+// // Using the same object from the last example:
+// // const user = { name: 'John Doe', age: 34 };
+// // Here's how you can give new variable names in the assignment:
+// // const { name: userName, age: userAge } = user;
+// // You may read it as "get the value of user.name and assign it to a new variable
+// // named userName" and so on. The value of userName would be the string John Doe,
+// // and the value of userAge would be the number 34.
+// const HIGH_TEMPERATURES = {
+//   yesterday: 75,
+//   today: 77,
+//   tomorrow: 80
+// };
+// const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+// console.log(highToday)
+
+
