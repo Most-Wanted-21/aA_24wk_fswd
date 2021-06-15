@@ -1144,26 +1144,54 @@
 //   return {name, age, gender};
 // };
 
-// WRITE CONCISE DECLARATIVE FUNCTIONS WITH ES6
-// When defining functions within objects in ES5, we have to use the keyword function as follows:
-// const person = {
-//   name: "Taylor",
-//   sayHello: function() {
-//     return `Hello! My name is ${this.name}.`;
+// // WRITE CONCISE DECLARATIVE FUNCTIONS WITH ES6
+// // When defining functions within objects in ES5, we have to use the keyword function as follows:
+// // const person = {
+// //   name: "Taylor",
+// //   sayHello: function() {
+// //     return `Hello! My name is ${this.name}.`;
+// //   }
+// // };
+// // With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
+// // const person = {
+// //   name: "Taylor",
+// //   sayHello() {
+// //     return `Hello! My name is ${this.name}.`;
+// //   }
+// // };
+// const bicycle = {
+//   gear: 2,
+//   setGear(newGear) {
+//     this.gear = newGear;
 //   }
 // };
-// With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
-// const person = {
-//   name: "Taylor",
-//   sayHello() {
-//     return `Hello! My name is ${this.name}.`;
+// bicycle.setGear(3);
+// console.log(bicycle.gear);
+
+// // USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR FUNCTION
+// // ES6 provides a new syntax to create objects, using the class keyword.
+// // It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+// // In ES5, we usually define a constructor function and use the new keyword to instantiate an object.
+// // var SpaceShuttle = function(targetPlanet){
+// //   this.targetPlanet = targetPlanet;
+// // }
+// // var zeus = new SpaceShuttle('Jupiter');
+// // The class syntax simply replaces the constructor function creation:
+// // class SpaceShuttle {
+// //   constructor(targetPlanet) {
+// //     this.targetPlanet = targetPlanet;
+// //   }
+// // }
+// // const zeus = new SpaceShuttle('Jupiter');
+// // It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object.
+// // Note: UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle used above.
+// // The constructor method is a special method for creating and initializing an object created with a class.
+// class Vegetable {
+//   constructor(name) {
+//     this.name = name;
 //   }
-// };
-const bicycle = {
-  gear: 2,
-  setGear(newGear) {
-    this.gear = newGear;
-  }
-};
-bicycle.setGear(3);
-console.log(bicycle.gear);
+// }
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name); // Should display 'carrot'
+
+// USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
